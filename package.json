@@ -1,0 +1,32 @@
+{
+  "name": "duzhou-market",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run _hack_ && NODE_OPTIONS=--openssl-legacy-provider docusaurus start",
+    "build": "npm run _hack_ && NODE_OPTIONS=--openssl-legacy-provider docusaurus build --out-dir dist",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "_hack_": "cp -f build/hack/theme-classic.Layout.js node_modules/@docusaurus/theme-classic/lib/theme/Layout/index.js"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.3.1",
+    "@docusaurus/preset-classic": "^2.3.1",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
