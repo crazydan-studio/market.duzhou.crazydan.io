@@ -13,7 +13,7 @@
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 6rem;
+  padding: 2rem;
   text-align: center;
   overflow: hidden;
   justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 img.warning {
-  width: 50%;
+  width: 60%;
 }
 
 .heroTitle {
@@ -37,13 +37,35 @@ img.warning {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
+@media (max-width: 968px) {
+  img.warning {
+    width: 90%;
+  }
+}
+
+@media (max-width: 620px) {
+  .heroTitle {
+    font-size: 5rem;
   }
 
+  .heroSubTitle {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 486px) {
   .heroTitle {
-    font-size: 6rem;
+    font-size: 4rem;
+  }
+
+  .heroSubTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .heroSubTitle {
+    font-size: 1.45rem;
   }
 }
 
