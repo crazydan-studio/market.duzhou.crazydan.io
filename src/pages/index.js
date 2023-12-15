@@ -20,6 +20,7 @@ function Home() {
           <h1 className={clsx('hero__title', styles.heroTitle)}>{siteConfig.title}</h1>
           <p className={clsx('hero__subtitle', styles.heroSubTitle)}>{siteConfig.tagline}</p>
         </div>
+        <img className={styles.warning} src="/img/bg.jpg"/>
       </header>
     </Layout>
   );
